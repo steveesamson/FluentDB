@@ -1,19 +1,19 @@
-# FluentDB
-FluentDB allows the expressive writing of database queries and routines. FluentDB is fluent, which is intuitive as you can nearly guess what should come next even if you are just getting started with FluentDB. FluentDB is not an ORM. It was developed to allow folks coming from relational databases background write expressive queries with object interactions in mind.
+# fluentdb
+fluentdb allows the expressive writing of database queries and routines. fluentdb is fluent, which is intuitive as you can nearly guess what should come next even if you are just getting started with fluentdb. fluentdb is not an ORM. It was developed to allow folks coming from relational databases background write expressive queries with object interactions in mind. fluentdb has been tested with MySQL in this release; tests for other databases will be added as they complete.
 
-##FluentDB options
-FluentDB takes all the options/config allowed by `PDO`. Please see http://php.net/manual/en/book.pdo.php for details. It also has, in addition, `debug_db` option which could be `true/false`. `debug_db` enables the logging of the raw queries to the console when it is set to *true*, useful while developing.
+##fluentdb options
+fluentdb takes all the options/config allowed by `PDO`. Please see http://php.net/manual/en/book.pdo.php for details. It also has, in addition, `debug_db` option which could be `true/false`. `debug_db` enables the logging of the raw queries to the console when it is set to *true*, useful while developing.
 
 
 ## Installation
 
 ```cli
-  composer require Slicks/FluentDB
+  composer require slicks/fluentdb
 ```
 
 ## Usage
 
-Using FluentDB is pure joy:
+Using fluentdb is pure joy:
 
 ```php
 
@@ -34,7 +34,7 @@ Using FluentDB is pure joy:
           
 ```
 
-##FluentDB in action
+##fluentdb in action
 
 Now that we have a valid `db` object, how do we use it? Well, see the following:
 

@@ -21,7 +21,7 @@
   ],
   "minimum-stability": "RC",
   "require": {
-      "PHP":"^5.6"
+      "PHP":">=5.3"
   },
   "require-dev": {
     "peridot-php/peridot": "~1.15",

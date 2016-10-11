@@ -1,5 +1,5 @@
 {
-  "name": "Slicks/FluentDB",
+  "name": "slicks/fluentdb",
   "description": "FluentDB allows the expressive writing of database queries and routines. FluentDB is fluent, which is intuitive as you can nearly guess what should come next even if you are just getting started with FluentDB. FluentDB is not an ORM. It was developed to allow folks coming from relational databases background write expressive queries with object interactions in mind.",
   "type": "project",
   "license": "MIT",

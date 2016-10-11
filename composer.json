@@ -3,6 +3,16 @@
   "description": "fluentdb allows the expressive writing of database queries and routines. fluentdb is fluent, which is intuitive as you can nearly guess what should come next even if you are just getting started with fluentdb. fluentdb is not an ORM. It was developed to allow folks coming from relational databases background write expressive queries with object interactions in mind. fluentdb has been tested with MySQL in this release; tests for other databases will be added as they complete.",
   "type": "library",
   "license": "MIT",
+  "keywords": [
+		"database",
+		"fluent interface",
+		"asynchronous db interface",
+		"abstraction",
+		"layer",
+		"db",
+		"pdo"
+	],
+"homepage": "https://github.com/steveesamson/fluentdb",
   "authors": [
     {
       "name": "Steve Samson",

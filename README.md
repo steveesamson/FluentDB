@@ -34,12 +34,12 @@ Using fluentdb is pure joy:
           
 ```
 
-##fluentdb in action
+## fluentdb in action
 
 Now that we have a valid `db` object, how do we use it? Well, see the following:
 
 
-##`fetch`ing records
+## `fetch`ing records
 
 ```php
    
@@ -54,7 +54,7 @@ Now that we have a valid `db` object, how do we use it? Well, see the following:
 
 The above is used when all record fields are needed. However, if a subset of the fields are of interest, **`select`** with **`from`** and **`fetch`** is the way to go.
 
-##`select`ing records
+## `select`ing records
 
 ```php
          
@@ -71,7 +71,7 @@ The above is used when all record fields are needed. However, if a subset of the
          
 ```
 
-##`query`ing records with `query`
+## `query`ing records with `query`
 
 ```php
 
@@ -87,7 +87,7 @@ The above is used when all record fields are needed. However, if a subset of the
 
 **Note:** The use of ONLY **`fetch`** or in conjunction with **`select`** and **`from`** does not change the outcome. I think it just depends on what flavour you like or the need at hand. That being said, all the examples are written in one or other flavour but what was done in one flavour can equally be done in the other flavour.
 
-###`where`
+### `where`
 ```php
 
      $db->where('id', 1)
@@ -143,10 +143,10 @@ The above is used when all record fields are needed. However, if a subset of the
          });
 ```
 
-###`where`, `orWhere`, `whereIn`, `orWhereIn`, `whereNotIn`, `orWhereNotIn` conditions
+### `where`, `orWhere`, `whereIn`, `orWhereIn`, `whereNotIn`, `orWhereNotIn` conditions
 Please, note that all the variations that apply to **`where`** also apply to the following: `orWhere`, `whereIn`, `orWhereIn`, `whereNotIn`, `orWhereNotIn`.
 
-###`orWhere`
+### `orWhere`
 ```php
 
      $db->where('id', 10)
@@ -159,7 +159,7 @@ Please, note that all the variations that apply to **`where`** also apply to the
          });
 ```
 
-###`whereIn`
+### `whereIn`
 
 ```php
 
@@ -174,7 +174,7 @@ Please, note that all the variations that apply to **`where`** also apply to the
     });
 ```
 
-###`orWhereIn`
+### `orWhereIn`
 
 ```php
 
@@ -190,7 +190,7 @@ Please, note that all the variations that apply to **`where`** also apply to the
       });
 ```
 
-###`whereNotIn`
+### `whereNotIn`
 
 ```php
 
@@ -205,7 +205,7 @@ Please, note that all the variations that apply to **`where`** also apply to the
     });
 ```
 
-###`orWhereNotIn`
+### `orWhereNotIn`
 
 ```php
 
@@ -221,7 +221,7 @@ Please, note that all the variations that apply to **`where`** also apply to the
       });
 ```
 
-###`like`
+### `like`
 
 Generates `task like %vacuum%` , **`b`** or **`both`**  for both ends are allowed.
 
@@ -238,7 +238,7 @@ Generates `task like %vacuum%` , **`b`** or **`both`**  for both ends are allowe
         });
 ```
 
-###`orLike`
+### `orLike`
 
 Generates `task like '%vacuum' or task like 'iron%'` , **`l`** or **`left`**  for left end are allowed, while **`r`** or **`right`**  for right end are allowed.
 
@@ -256,7 +256,7 @@ Generates `task like '%vacuum' or task like 'iron%'` , **`l`** or **`left`**  fo
       });
 ```
 
-###`notLike`
+### `notLike`
 
 Generates `task NOT like '%vacuum%'` , **`b`** or **`both`**  for both ends are allowed.
 
@@ -273,7 +273,7 @@ Generates `task NOT like '%vacuum%'` , **`b`** or **`both`**  for both ends are 
           });
 ```
 
-###`orNotLike`
+### `orNotLike`
 
 Generates `OR task NOT like '%dishes'` , **`l`** or **`left`**  for left end are allowed.
 
@@ -291,7 +291,7 @@ Generates `OR task NOT like '%dishes'` , **`l`** or **`left`**  for left end are
       });
 ```
 
-###`limit`
+### `limit`
 
 ```php
 
@@ -304,7 +304,7 @@ Generates `OR task NOT like '%dishes'` , **`l`** or **`left`**  for left end are
       });
 ```
 
-###`limit` with `offset`
+### `limit` with `offset`
 
 ```php
 
@@ -317,7 +317,7 @@ Generates `OR task NOT like '%dishes'` , **`l`** or **`left`**  for left end are
       });
 ```
 
-###`orderBy (desc)`
+### `orderBy (desc)`
 
 ```php
 
@@ -330,7 +330,7 @@ Generates `OR task NOT like '%dishes'` , **`l`** or **`left`**  for left end are
       });
 ```
 
-###`orderBy ([asc])` the direction is optional if ascending order is desired
+### `orderBy ([asc])` the direction is optional if ascending order is desired
 
 ```php
 
@@ -356,7 +356,7 @@ Same as below:
        });
 ```
 
-###`join`ing tables
+### `join`ing tables
 
 ```php
 
@@ -372,7 +372,7 @@ Same as below:
       });
 ```
 
-###`groupBy` for aggregates
+### `groupBy` for aggregates
 
 ```php
 
@@ -388,7 +388,7 @@ Same as below:
        });
 ```
 
-###`having` for aggregates
+### `having` for aggregates
 
 ```php
 
@@ -405,7 +405,7 @@ Same as below:
       });
 ```
 
-###`orHaving` for aggregates
+### `orHaving` for aggregates
 
 ```php
 
@@ -423,9 +423,9 @@ Same as below:
       });
 ```
 
-##`insert`ing records
+## `insert`ing records
 
-###`insert` - single record per insert
+### `insert` - single record per insert
 
 ```php
 
@@ -437,7 +437,7 @@ Same as below:
     });
 ```
 
-###inserting multiple records with `query`
+### inserting multiple records with `query`
 
 ```php
 
@@ -452,7 +452,7 @@ Same as below:
 
 
 
-###`update`ing records
+### `update`ing records
 
 ```php
 
@@ -467,7 +467,7 @@ Same as below:
            });
 ```
 
-###`delete`ing records
+### `delete`ing records
 
 ```php
 
@@ -482,7 +482,7 @@ Same as below:
 ```
 
 
-##Test
+## Test
 Before running the tests, load the included script **test_scripts.sql** onto your mysql database. Ensure to load the script as 'root' for you need to grant privileges. Update the tests/specs.php with your database parameters. Thereafter, run;
 
 ```cli
